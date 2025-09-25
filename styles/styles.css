@@ -149,6 +149,9 @@ h3 {
 
 .projects__image {
     margin-bottom: 15px;
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .projects__title {
@@ -198,6 +201,9 @@ h3 {
 
 .services__image {
     margin-bottom: 15px;
+    height: 270px;
+    object-fit: cover;
+    object-position: center;
 }
 
 /* lanscape */
