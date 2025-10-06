@@ -1,0 +1,20 @@
+/* Блок services */
+.services {
+    padding: 151px 0 150px;
+}
+
+.services__list {
+    display: grid;
+    gap: 60px;
+}
+
+/* Карточка услуги */
+.service-card__image {
+    margin-bottom: 15px;
+    max-height: 270px;
+    object-fit: cover;
+}
+
+.service-card__title {
+    font-size: 30px;
+}

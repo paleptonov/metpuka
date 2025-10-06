@@ -1,0 +1,20 @@
+/* Блок header */
+.header {
+    padding: 34px 0 70px;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.header__logo {
+    flex-shrink: 0;
+}
+
+.header__logo img {
+    vertical-align: sub;
+}

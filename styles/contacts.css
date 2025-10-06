@@ -1,0 +1,39 @@
+/* Блок contacts */
+.contacts {
+    margin: 186px 0 160px;
+}
+
+.contacts__wrapper {
+    position: relative;
+}
+
+.contacts__wrapper::before {
+    content: '';
+    position: absolute;
+    top: -35px;
+    width: 13px;
+    height: 22px;
+    background-image: url('../resources/icon.svg');
+    background-size: cover;
+}
+
+.contacts__link {
+    display: inline-block;
+    font-size: 60px;
+    line-height: 1;
+    color: inherit;
+    text-decoration-color: transparent;
+}
+
+.contacts__link:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.contacts__link.contacts__link-active,
+.contacts__link:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 15px;
+    text-decoration-color: currentColor;
+}

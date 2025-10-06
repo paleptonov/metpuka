@@ -1,0 +1,17 @@
+/* Главный файл стилей - импорт всех модулей */
+@import url('./base.css');
+
+@import url('./button.css');
+@import url('./navigation.css');
+
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./about.css');
+@import url('./projects.css');
+@import url('./services.css');
+@import url('./gallery.css');
+@import url('./contacts.css');
+@import url('./footer.css');
+
+@import url('./responsive.css');
+

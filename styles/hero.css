@@ -1,0 +1,25 @@
+/* Блок hero */
+.hero__title {
+    max-width: 1000px;
+    margin-bottom: 30px;
+    font-size: 60px;
+    line-height: 1;
+}
+
+.hero__image-wrapper {
+    position: relative;
+    height: 500px;
+    background-image: url('../resources/01.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero__description {
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+    max-width: 430px;
+    font-size: 20px;
+    color: var(--color-white);
+}

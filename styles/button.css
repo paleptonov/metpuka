@@ -1,0 +1,30 @@
+/* Компонент кнопки */
+.button {
+    display: inline-block;
+    padding: 20px 41px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: var(--transition-base);
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.button--primary {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+}
+
+.button--outline {
+    width: 100%;
+    border: 1px solid var(--color-accent);
+    color: var(--color-accent);
+}
+
+.button--outline:hover {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+}

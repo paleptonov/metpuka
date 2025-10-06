@@ -1,0 +1,91 @@
+/* CSS переменные для единообразия */
+:root {
+    /* Цвета */
+    --color-primary: #121212;
+    --color-accent: #AD1818;
+    --color-white: #FFFFFF;
+    --color-text: #121212;
+    --color-text-inverse: #FFFFFF;
+    
+    /* Типографика */
+    --font-family: "Manrope", sans-serif;
+    --font-weight-normal: 400;
+    --letter-spacing: -0.03em;
+    
+    /* Отступы */
+    --section-gap: 150px;
+    --section-gap-tablet: 120px;
+    --section-gap-mobile: 80px;
+    
+    /* Транзишены */
+    --transition-base: all 0.3s ease;
+    --transition-fast: all 0.2s ease-in-out;
+    
+    /* Тени */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Базовые стили */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--color-text);
+    line-height: 1.4;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, button {
+    letter-spacing: var(--letter-spacing);
+}
+
+a, button {
+    transition: var(--transition-base);
+}
+
+a:focus-visible, 
+button:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+}
+
+img {
+    width: 100%;
+}
+
+/* Компонент контейнера */
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Компонент секции */
+.section {
+    margin-top: var(--section-gap);
+}
+
+.section--dark {
+    background-color: var(--color-primary);
+    color: var(--color-text-inverse);
+}
+
+.section__title {
+    margin-bottom: 31px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/* Утилитарные классы */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}

@@ -1,0 +1,18 @@
+/* Блок gallery */
+.gallery {
+    position: relative;
+    height: 717px;
+    margin-top: 0;
+    background-image: url('../resources/02.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery__title {
+    position: absolute;
+    bottom: 60px;
+    max-width: 445px;
+    color: var(--color-white);
+    font-size: 30px;
+}
