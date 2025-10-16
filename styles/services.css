@@ -4,17 +4,45 @@
 }
 
 .services__list {
-    display: grid;
-    gap: 60px;
+    margin-bottom: 103px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 80px;
+}
+
+.services__item {
+    width: calc(50% - 5px);
+}
+
+.service-card {
+    position: relative;
+}
+
+.service-card__price {
+    position: absolute;
+    top: 31px;
+    left: 30px;
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-size: 22px;
+    background-color: var(--color-accent);
 }
 
 /* Карточка услуги */
 .service-card__image {
-    margin-bottom: 15px;
-    max-height: 270px;
+    margin-bottom: 25px;
+    max-height: 388px;
     object-fit: cover;
 }
 
 .service-card__title {
+    font-size: 30px;
+}
+
+.services__button {
+    width: 100%;
+    padding: 55px 0;
     font-size: 30px;
 }

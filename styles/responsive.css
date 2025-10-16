@@ -2,6 +2,7 @@
 
 /* Планшеты и маленькие десктопы */
 @media (max-width: 1023px) {
+
     .hero__title {
         font-size: 50px;
         max-width: 800px;
@@ -14,6 +15,36 @@
     .about__description {
         font-size: 35px;
         max-width: 700px;
+    }
+
+    .service-card__image {
+        margin-bottom: 15px;
+        max-height: 315px;
+    }
+
+    .service-card__price {
+        font-size: 20px;
+    }
+
+    .service-card__title {
+        font-size: 25px;
+    }
+
+    .feedback__list {
+        row-gap: 80px;
+    }
+
+    .feedback__item {
+        width: 75%;
+    }
+
+    .feedback-card__title {
+        margin-bottom: 25px;
+        font-size: 35px;
+    }
+
+    .feedback-card__description {
+        font-size: 20px;
     }
 
     .gallery {
@@ -49,6 +80,18 @@
         padding: 100px 0;
     }
 
+    .service-card__price {
+        font-size: 14px;
+    }
+
+    .feedback__item {
+        width: 100%;
+    }
+
+    .feedback__item:last-child:nth-child(2n + 1) {
+        width: 100%;
+    }
+
     .contacts {
         margin: 120px 0 80px;
     }
@@ -56,6 +99,7 @@
 
 /* Мобильные устройства */
 @media (max-width: 575px) {
+
     .header {
         padding-bottom: 60px;
     }
@@ -127,6 +171,38 @@
 
     .services__title {
         margin-bottom: 20px;
+    }
+
+    .services__list {
+        margin-bottom: 60px;
+        row-gap: 60px;
+    }
+
+    .services__item {
+        width: 100%;
+    }
+
+    .service-card__image {
+        margin-bottom: 10px;
+        max-height: 240px;
+    }
+
+    .service-card__title {
+        font-size: 18px;
+    }
+
+    .services__button {
+        padding: 37px 0;
+        font-size: 22px;
+    }
+
+    .feedback-card__title {
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+
+    .feedback-card__description {
+        font-size: 16px;
     }
 
     .gallery {

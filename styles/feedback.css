@@ -1,0 +1,23 @@
+.feedback__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 50px;
+}
+
+.feedback__item {
+    width: calc(50% - 25px);
+}
+
+.feedback__item:last-child:nth-child(2n + 1) {
+    width: 75%;
+}
+
+.feedback-card__title {
+    margin-bottom: 12px;              
+    font-size: 45px;
+}
+
+.feedback-card__description {
+    font-size: 22px;
+}
