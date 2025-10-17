@@ -226,19 +226,61 @@
             </div>
         </section>
 
-        <section class="gallery section  " aria-labelledby="gallery-title">
-            <div class="container">
-                <h3 id="gallery-title" class="gallery__title">Проект Двухкомнатной квартиры&nbsp;в&nbsp;ЖК&nbsp;Лесной
-                    Пейзаж</h3>
+        <section class="gallery section" aria-labelledby="gallery-title">
+            <div class="container gallery__container">
+                <h2 id="gallery-title" class="gallery__title">Галерея проектов</h2>
+                <div class="gallery__controls">
+                    <button class="gallery__control-prev">
+                        <svg viewBox="0 0 19.6167 33.3333" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="19.616699" height="33.333252" fill="none">
+                            <path
+                                d="M19.6167 2.95L16.6667 0L0 16.6667L16.6667 33.3333L19.6167 30.3833L5.9 16.6667L19.6167 2.95Z"
+                                fill="rgb(255,255,255)" fill-rule="nonzero" />
+                        </svg>
+                    </button>
+                    <button class="gallery__control-next">
+                        <svg viewBox="0 0 19.6167 33.3333" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="19.616699" height="33.333252" fill="none">
+                            <path
+                                d="M19.6167 2.95L16.6667 0L0 16.6667L16.6667 33.3333L19.6167 30.3833L5.9 16.6667L19.6167 2.95Z"
+                                fill="rgb(255,255,255)" fill-rule="nonzero" transform="matrix(-1,0,0,1,19.6167,0)" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="gallery__slides">
+                <div class="gallery__slide gallery__slide-1 gallery__slide_active">
+                    <div class="container">
+                        <p class="gallery__desription">Проект Двухкомнатной квартиры&nbsp;в&nbsp;ЖК&nbsp;Лесной
+                            Пейзаж</p>
+                    </div>
+                </div>
+                <div class="gallery__slide gallery__slide-2">
+                    <div class="container">
+                        <p class="gallery__desription">Проект гостиной в&nbsp;ЖК&nbsp;Маяк</p>
+                    </div>
+                </div>
+                <div class="gallery__slide gallery__slide-3">
+                    <div class="container">
+                        <p class="gallery__desription">Визуализация кухни-гостиной в&nbsp;частном доме</p>
+                    </div>
+                </div>
+                <div class="gallery__slide gallery__slide-4">
+                    <div class="container">
+                        <p class="gallery__desription">Проект кухни в&nbsp;скандинавском стиле для ЖК&nbsp;Северный
+                            Ветер</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="contacts" class="contacts section" aria-labelledby="contacts-title">
             <div class="container">
+                <h2 id="contacts-title" class="contacts__title section__title">Контакты</h2>
                 <div class="contacts__wrapper">
-                    <h2 id="contacts-title" class="contacts__title section__title">Контакты</h2>
-                    <a class="contacts__link" href="tel:+79358954535">+7 935 895-45-35</a><br>
-                    <a class="contacts__link contacts__link-active" href="mailto:hello@mail.com">hello@mail.com</a>
+                    <a class="contacts__link contacts__link-phone" href="tel:+79358954535">+7 935 895-45-35</a>
+                    <a class="contacts__link contacts__link-mail contacts__link-active"
+                        href="mailto:hello@mail.com">hello@mail.com</a>
                 </div>
             </div>
         </section>
@@ -265,6 +307,8 @@
             <p class="footer__copyright">студия дизайна интерьера Метрика — 2023</p>
         </div>
     </footer>
+
+    <script src="gallery.js"></script>
 </body>
 
 </html>

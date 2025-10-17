@@ -1,32 +1,41 @@
 /* Блок contacts */
 .contacts {
-    margin: 186px 0 160px;
+    margin-bottom: 150px;
 }
 
 .contacts__wrapper {
-    position: relative;
-}
-
-.contacts__wrapper::before {
-    content: '';
-    position: absolute;
-    top: -35px;
-    width: 13px;
-    height: 22px;
-    background-image: url('../resources/icon.svg');
-    background-size: cover;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .contacts__link {
     display: inline-block;
+    width: 50%;
     font-size: 60px;
     line-height: 1;
     color: inherit;
     text-decoration-color: transparent;
 }
 
-.contacts__link:not(:last-child) {
-    margin-bottom: 30px;
+.contacts__link::before {
+    content: '';
+    display: block;
+    margin-bottom: 15px;
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-size: cover;
+}
+
+.contacts__link-phone {
+    background-image: url('../resources/phone.svg');
+    background-repeat: no-repeat;
+}
+
+.contacts__link-mail {
+    background-image: url('../resources/mail.svg');
+    background-repeat: no-repeat;
 }
 
 .contacts__link.contacts__link-active,
