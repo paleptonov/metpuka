@@ -37,6 +37,10 @@
                     </li>
                 </ul>
             </nav>
+            <button class="burger" aria-label="Открыть меню">
+                <span class="burger__line burger__line--top"></span>
+                <span class="burger__line burger__line--bottom"></span>
+            </button>
         </div>
     </header>
 
@@ -153,7 +157,8 @@
                         </article>
                     </li>
                 </ul>
-                <button type="button" class="button button--primary services__button">Заказать услугу</button>
+                <button type="button" class="button button--primary services__button open-popup">Заказать
+                    услугу</button>
             </div>
         </section>
 
@@ -307,8 +312,71 @@
             <p class="footer__copyright">студия дизайна интерьера Метрика — 2023</p>
         </div>
     </footer>
+    <!-- popup -->
+    <div class="popup" id="orderPopup" aria-hidden="true">
+        <div class="popup__overlay"></div>
+        <div class="popup__body" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+            <button class="popup__close" aria-label="Закрыть окно">×</button>
+            <h2 id="popupTitle" class="popup__title">Заказать услугу</h2>
+            <p class="popup__text">Заполните форму, мы&nbsp;свяжемся с&nbsp;вами в&nbsp;течение суток</p>
+
+            <form class="order-form" id="orderForm">
+                <div class="form-group">
+                    <input type="text" id="userName" name="name" class="form-input" required placeholder="Имя"
+                        autocomplete="name">
+                </div>
+
+                <div class="form-group">
+                    <input type="email" id="userEmail" name="email" class="form-input" required
+                        placeholder="Электронная почта" autocomplete="email">
+                </div>
+
+                <div class="form-group">
+                    <input type="tel" id="userPhone" name="phone" class="form-input" required
+                        placeholder="Номер телефона" autocomplete="tel">
+                </div>
+
+                <button type="submit" class="button button--primary submit-btn" id="submitBtn">Отправить</button>
+            </form>
+        </div>
+    </div>
+    <!-- burger-menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu__overlay"></div>
+        <div class="mobile-menu__content">
+            <a href="#" class="logo mobile-menu__logo" aria-label="На главную страницу">
+                <img src="resources/logo.svg" alt="Логотип Метрика" width="156" height="26">
+            </a>
+            <!-- Навигация в мобильном меню -->
+            <nav class="nav mobile-nav" aria-label="Мобильная навигация">
+                <ul class="nav__list mobile-nav__list">
+                    <li class="nav__item mobile-nav__item">
+                        <a href="#about" class="nav__link mobile-nav__link">О нас</a>
+                    </li>
+                    <li class="nav__item mobile-nav__item">
+                        <a href="#projects" class="nav__link mobile-nav__link">Проекты</a>
+                    </li>
+                    <li class="nav__item mobile-nav__item">
+                        <a href="#services" class="nav__link mobile-nav__link">Услуги</a>
+                    </li>
+                    <li class="nav__item mobile-nav__item">
+                        <a href="#contacts" class="nav__link mobile-nav__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile-contacts">
+                <h2 id="mobile-contacts__title" class="mobile-contacts__title">для связи:</h2>
+                <div class="mobile-contacts__wrapper">
+                    <a class="mobile-contacts__link" href="tel:+79358954535">+7 935 895-45-35</a>
+                    <a class="mobile-contacts__link" href="mailto:hello@mail.com">hello@mail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="gallery.js"></script>
+    <script src="popup.js"></script>
+    <script src="burger.js"></script>
 </body>
 
 </html>

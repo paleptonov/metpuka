@@ -51,10 +51,6 @@ button:focus-visible {
     outline-offset: 3px;
 }
 
-img {
-    width: 100%;
-}
-
 /* Компонент контейнера */
 .container {
     max-width: 1180px;

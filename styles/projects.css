@@ -7,14 +7,10 @@
     margin-bottom: 90px;
 }
 
-.projects__button {
-    padding: 55px 0;
-    font-size: 30px;
-}
-
 /* Карточка проекта */
 .project-card__image {
     margin-bottom: 15px;
+    width: 100%;
     max-height: 450px;
     object-fit: cover;
 }
@@ -38,4 +34,9 @@
 
 .project-card__link:hover {
     opacity: 0.7;
+}
+
+.projects__button {
+    padding: 55px 0;
+    font-size: 30px;
 }
